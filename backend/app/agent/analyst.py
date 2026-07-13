@@ -1,3 +1,11 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+backend_dir = Path(__file__).resolve().parents[2]
+env_path = backend_dir / ".env"
+load_dotenv(dotenv_path=env_path)
+
 from langchain_groq import ChatGroq  
 from langchain_community.agent_toolkits import SQLDatabaseToolkit
 from langchain.agents import create_openai_tools_agent, AgentExecutor
@@ -12,7 +20,6 @@ from backend.app.tools.chart_generator import suggest_chart_json
 def initialize_analyst_agent():
     db = get_db_connection()
     
-
     llm = ChatGroq(
         model="llama-3.3-70b-versatile", 
         temperature=0
