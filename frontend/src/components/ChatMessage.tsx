@@ -11,12 +11,12 @@ export const ChatMessage = ({ message, response, timestamp }: ChatMessageProps) 
     <div className={styles.container}>
       <div className={styles.userMessage}>
         <span className={styles.label}>You</span>
-        <p>{message}</p>
+        <p className={styles.text}>{message}</p>
         <span className={styles.time}>{new Date(timestamp).toLocaleTimeString()}</span>
       </div>
       <div className={styles.aiMessage}>
         <span className={styles.label}>AI Analyst</span>
-        <p>{response}</p>
+        <p className={styles.text}>{response}</p>
       </div>
     </div>
   )

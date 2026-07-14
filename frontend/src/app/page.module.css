@@ -1,0 +1,93 @@
+.main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.chatSection {
+  padding: 30px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty p {
+  font-size: 16px;
+}
+
+.chatHistory {
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.clearButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #ffe7e7;
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 30px 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .chatSection {
+    padding: 20px;
+  }
+}
