@@ -1,0 +1,48 @@
+.container {
+  margin-bottom: 20px;
+  border-left: 4px solid #0070f3;
+  padding-left: 16px;
+}
+
+.userMessage {
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #e7f3ff;
+  border-radius: 4px;
+}
+
+.aiMessage {
+  padding: 12px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.userMessage .label {
+  color: #0070f3;
+}
+
+.aiMessage .label {
+  color: #666;
+}
+
+.time {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+
+p {
+  margin: 8px 0;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

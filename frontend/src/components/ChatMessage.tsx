@@ -1,0 +1,23 @@
+import styles from './ChatMessage.module.css'
+
+interface ChatMessageProps {
+  message: string
+  response: string
+  timestamp: Date
+}
+
+export const ChatMessage = ({ message, response, timestamp }: ChatMessageProps) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.userMessage}>
+        <span className={styles.label}>You</span>
+        <p>{message}</p>
+        <span className={styles.time}>{new Date(timestamp).toLocaleTimeString()}</span>
+      </div>
+      <div className={styles.aiMessage}>
+        <span className={styles.label}>AI Analyst</span>
+        <p>{response}</p>
+      </div>
+    </div>
+  )
+}
