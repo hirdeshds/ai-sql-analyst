@@ -4,12 +4,12 @@ An AI-powered SQL analysis tool that combines a FastAPI backend with a Next.js f
 
 ## Features
 
-- 🤖 AI-powered SQL analysis using LangChain agents
-- 💬 Interactive chat interface for data exploration
-- 📊 Database schema viewer
-- 🚀 Full-stack application (React frontend + FastAPI backend)
-- 🎨 Modern, responsive UI
-- 🔄 Real-time session management
+-  AI-powered SQL analysis using LangChain agents
+-  Interactive chat interface for data exploration
+-  Database schema viewer
+-  Full-stack application (React frontend + FastAPI backend)
+-  Modern, responsive UI
+-  Real-time session management
 
 ## Quick Start
 
