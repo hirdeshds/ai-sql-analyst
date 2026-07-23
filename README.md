@@ -13,6 +13,7 @@ An AI-powered SQL analysis tool that combines a FastAPI backend with a Next.js f
 
 ## Quick Start
 
+
 ### Prerequisites
 
 - Node.js 18+
